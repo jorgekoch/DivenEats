@@ -2,6 +2,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #eeeeee
+
 }
 
 .topo {
@@ -94,6 +96,7 @@ img {
     border-color: black;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    background-color: #FFFFFF;
 }
 
 .bottom {
@@ -130,21 +133,27 @@ img {
     cursor: pointer;
 }
 
-.escondido {
-    display: none;
-}
-
 .bordas-seleção {
     border: 5px solid #32B72F;
     border-radius: 9px;
 }
 
 .finalizacao {
+    display: flex; 
+    justify-content: center;   
+    align-items: center;     
     width: 100%;
     height: 100%;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+.escondido {
+    display: none;
+}
+
+#resumoItens p {
+    margin-bottom: 12px; }
 
 .container {
     display: flex;
@@ -159,7 +168,7 @@ img {
 
 .resumo {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -173,7 +182,9 @@ img {
 
 .fecharPedido {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 5px;
     width: 329px;
     height: 52px;
@@ -201,5 +212,6 @@ img {
     color: #FFFFFF;
     border-style: none;
     background-color: #50D074;
+    cursor: pointer;
 
 }
